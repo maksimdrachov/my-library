@@ -2,7 +2,7 @@
 
 A repository meant to keep track of all my notes while reading. 
 
-Focused on technical literature mostly: embedded, cryptography, blockchain, IoT.
+Focused on technical literature: embedded, security, blockchain, IoT.
 
 ## Bookshelf
 
@@ -11,7 +11,7 @@ Title |  Notes
 ---------|---------
  Azaria Labs: ARM Assembly | goal: introduction to assembly ([link](https://azeria-labs.com/writing-arm-assembly-part-1/)) 
  Embedded Systems with ARM Cortex-M Microcontrollers in Assembly Language and C | goal: become master at assembly
- Programming Bitcoin | goal: make my own Bitcoin wallet
+ [Programming Bitcoin](https://github.com/maksimdrachov/my-library/tree/master/programming-bitcoin) | goal: make my own Bitcoin wallet
 
 
 Finished
