@@ -6,7 +6,7 @@ Focused on technical literature: embedded, security, blockchain, IoT.
 
 ## Bookshelf
 
-Currently on the stack:
+_Currently on the stack:_
 Title |  Notes
 ---------|---------
  Azaria Labs: ARM Assembly | goal: introduction to assembly ([link](https://azeria-labs.com/writing-arm-assembly-part-1/)) 
@@ -14,7 +14,7 @@ Title |  Notes
  [Programming Bitcoin](https://github.com/maksimdrachov/my-library/tree/master/programming-bitcoin) | goal: make my own Bitcoin wallet
 
 
-Finished
+_Finished:_
 Title |  Notes
 ---------|---------
  Operating Systems: Three Easy Pieces | Very in-depth look at different OS concepts, and surprisingly funny at times.

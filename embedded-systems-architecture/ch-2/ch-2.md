@@ -312,3 +312,7 @@ Another valid approach to run the code on the development machine, which is much
 
 The limit of the emulation approach is that QEMU can only be used to debug generic features that do not involve interaction with actual hardware.
 
+
+TO DO:
+
+finish additional exercises on linux
