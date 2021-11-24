@@ -9,12 +9,9 @@ Focused on technical literature: embedded, security, blockchain, IoT.
 _Currently on the stack:_
 Title |  Notes
 ---------|---------
- Azaria Labs: ARM Assembly | goal: introduction to assembly ([link](https://azeria-labs.com/writing-arm-assembly-part-1/)) 
- Embedded Systems with ARM Cortex-M Microcontrollers in Assembly Language and C | goal: become master at assembly
- [Programming Bitcoin](https://github.com/maksimdrachov/my-library/tree/master/programming-bitcoin) | goal: make my own Bitcoin wallet
 [The Rust Programming Language](https://doc.rust-lang.org/book/title-page.html) | rust basic
 [Rust: The Discovery Book](https://docs.rust-embedded.org/discovery/index.html) | learn rust for embedded
-[Rust: The Cargo Book](https://doc.rust-lang.org/cargo/index.html) | learn rust cargo (package manager)
+
 
 
 
