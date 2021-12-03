@@ -8,26 +8,3 @@ cd ~/my-library/programming-bitcoin/programmingbitcoin
 ```
 
 This opens a Jupyter notebook in the browser.
-
-**Chapter 1: Finite Fields**
-
-- [x] Ex 1
-- [x] Ex 2
-- [x] Ex 3
-- [x] Ex 4
-- [x] Ex 5
-- [x] Ex 6
-- [x] Ex 7
-- [x] Ex 8
-- [x] Ex 9
-
-
-**Chapter 2: Elliptic Curves**
-
-- [x] Ex 1
-- [x] Ex 2
-- [x] Ex 3
-- [ ] Ex 4
-- [ ] Ex 5
-- [ ] Ex 6
-- [ ] Ex 7

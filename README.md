@@ -11,6 +11,7 @@ Title |  Notes
 ---------|---------
 [The Rust Programming Language](https://doc.rust-lang.org/book/title-page.html) | rust basic
 [Rust: The Discovery Book](https://docs.rust-embedded.org/discovery/index.html) | learn rust for embedded
+[Programming Bitcoin](https://www.amazon.com/Programming-Bitcoin-Learn-Program-Scratch/dp/1492031496) | learning how bitcoin works under the hood
 
 
 
@@ -20,6 +21,6 @@ _Finished:_
 Title |  Notes
 ---------|---------
  Operating Systems: Three Easy Pieces | Very in-depth look at different OS concepts, and surprisingly funny at times.
- Embedded Systems Architecture (by Daniele Lacamera) | Covers most of the basics that are necessary for embedded programming, currently re-reading to further absorb the material. 
+ Embedded Systems Architecture (by Daniele Lacamera) | Covers most of the basics that are necessary for embedded programming, recommended. 
  The C Programming Language | A classic on C. Didn't finish completely, but maybe worth coming back to in the future. 
  
