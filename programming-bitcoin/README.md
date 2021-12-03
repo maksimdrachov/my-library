@@ -9,8 +9,6 @@ cd ~/my-library/programming-bitcoin/programmingbitcoin
 
 This opens a Jupyter notebook in the browser.
 
-#### Day 1: 27/08/21
-
 **Chapter 1: Finite Fields**
 
 - [x] Ex 1
