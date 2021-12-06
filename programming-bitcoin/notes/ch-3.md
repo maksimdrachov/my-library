@@ -175,3 +175,25 @@ where k was chosen randomly, u,v != 0 can be chosen by the signer, and G and P a
 
 ### Verification in Depth
 
+Signatures sign some fixed-length value (our "contract")-in our case, something that's 32 bytes. 
+
+To guarantee that the thing we're signing is 32 bytes, we hash the document first. In Bitcoin, the hashing function is hash256, or two rounds of sha256. We will call the result of the hash the signatures hash, or z.
+
+The signature that we are verifying has two components, (r,s). r is the x coordinate of some point R that we'll come back to. The formula for s is as above:
+
+s = (z+re)/k
+
+### Verifying a Signature
+
+#### Execise 6
+
+### Programming Signature Verification
+
+### Signing in Depth
+
+### Creating a Signature
+
+#### Exercise 7
+
+### Programming Message Signing
+
