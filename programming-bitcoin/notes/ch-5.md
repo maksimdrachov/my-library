@@ -43,3 +43,9 @@ Each input contains four fields. The first two fields point to the previous tran
 
 Each input has a reference to previous transactions output. The previous transaction ID is the hash256 of the previous transaction's contents. This uniquely defines the previous transaction, as the probability of a hash collision is impossibly low. 
 
+As we'll see, each transaction has to have at least one output, but may have many. Thus, we need to define exactly which output _within a transaction_ we're spending, which is captured in the previous transaction index. 
+
+Note that the previous transaction is 32 bytes and that the previous transaction index is 4 bytes. Both are little-endian.
+
+The ScriptSig has to do with Bitcoin's smart contract language, Script, discussed more thoroughly in Chapter 6. For now, think of the the ScriptSig as opening a locked box - something that can only be done by the owner of the transaction output. The ScriptSig field is a variable-lenght field, not a fixed-length field like most of what we've seen so far. A variable-length field requires us to define exactly how long the field will be, which is why the field is preceded by a varint telling us how long it is. 
+
