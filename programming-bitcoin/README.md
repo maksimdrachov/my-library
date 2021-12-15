@@ -65,41 +65,41 @@ Signing and Verification
 ### CH4: Serialization
 
 Uncompressed SEC Format
-- [ ] Exercise 1
+- [x] Exercise 1
 
 Compressed SEC Format
-- [ ] Exercise 2
+- [x] Exercise 2
 
 DER Signatures
-- [ ] Exercise 3
+- [x] Exercise 3
 
 Base58
-- [ ] Exercise 4
-- [ ] Exercise 5
-- [ ] Exercise 6
+- [x] Exercise 4
+- [x] Exercise 5
+- [x] Exercise 6
 
 Big- and Little-Endian Redux
-- [ ] Exercise 7
-- [ ] Exercise 8
-- [ ] Exercise 9
+- [x] Exercise 7
+- [x] Exercise 8
+- [x] Exercise 9
 
 ### CH5: Transactions
 
 Version
-- [ ] Exercise 1
+- [x] Exercise 1
 
 Inputs
-- [ ] Exercise 2
+- [x] Exercise 2
 
 Outputs
-- [ ] Exercise 3
+- [x] Exercise 3
 
 Locktime
-- [ ] Exercise 4
-- [ ] Exercise 5
+- [x] Exercise 4
+- [x] Exercise 5
 
 Transaction Fee
-- [ ] Exercise 6
+- [x] Exercise 6
 
 ### CH6: Script
 
