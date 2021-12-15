@@ -12,6 +12,8 @@ Title |  Notes
 [The Rust Programming Language](https://doc.rust-lang.org/book/title-page.html) | rust basic
 [Rust: The Discovery Book](https://docs.rust-embedded.org/discovery/index.html) | learn rust for embedded
 [Programming Bitcoin](https://www.amazon.com/Programming-Bitcoin-Learn-Program-Scratch/dp/1492031496) | learning how bitcoin works under the hood
+[Art of Electronics](https://artofelectronics.net/) | electronics
+
 
 _In progress:_
 Title |  Notes
