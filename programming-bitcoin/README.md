@@ -11,58 +11,58 @@ This opens a Jupyter notebook in the browser.
 
 ## Exercises
 
-**CH1: Finite Fields**
+### CH1: Finite Fields
 
 Defining Finite Sets
-- [ ] Exercise 1 
+- [x] Exercise 1 
 
 Finite Field Addition and Subtraction
-- [ ] Exercise 2
-- [ ] Exercise 3
+- [x] Exercise 2
+- [x] Exercise 3
 
 Finite Field Multiplication and Exponentiation
-- [ ] Exercise 4
-- [ ] Exercise 5
-- [ ] Exercise 6
-- [ ] Exercise 7
+- [x] Exercise 4
+- [x] Exercise 5
+- [x] Exercise 6
+- [x] Exercise 7
 
 Finite Field Division
-- [ ] Exercise 8
-- [ ] Exercise 9
+- [x] Exercise 8
+- [x] Exercise 9
 
-**CH2: Elliptic Curves**
+### CH2: Elliptic Curves
 
 Elliptic Curves
-- [ ] Exercise 1
-- [ ] Exercise 2
+- [x] Exercise 1
+- [x] Exercise 2
 
 Coding Point Addition
-- [ ] Exercise 3
-- [ ] Exercise 4
-- [ ] Exercise 5
-- [ ] Exercise 6
-- [ ] Exercise 7
+- [x] Exercise 3
+- [x] Exercise 4
+- [x] Exercise 5
+- [x] Exercise 6
+- [x] Exercise 7
 
-**CH3: Elliptic Curve Cryptography**
+### CH3: Elliptic Curve Cryptography
 
 Elliptic Curves over Finite Fields
-- [ ] Exercise 1
+- [x] Exercise 1
 
 Coding Point Addition over Finite Fields
-- [ ] Exercise 2
-- [ ] Exercise 3
+- [x] Exercise 2
+- [x] Exercise 3
 
 Scalar Multiplication for Elliptic Curves
-- [ ] Exercise 4
+- [x] Exercise 4
 
 Mathematical Groups
-- [ ] Exercise 5
+- [x] Exercise 5
 
 Signing and Verification
-- [ ] Exercise 6
-- [ ] Exercise 7
+- [x] Exercise 6
+- [x] Exercise 7
 
-**CH4: Serialization**
+### CH4: Serialization
 
 Uncompressed SEC Format
 - [ ] Exercise 1
@@ -83,7 +83,7 @@ Big- and Little-Endian Redux
 - [ ] Exercise 8
 - [ ] Exercise 9
 
-**CH5: Transactions**
+### CH5: Transactions
 
 Version
 - [ ] Exercise 1
@@ -101,7 +101,7 @@ Locktime
 Transaction Fee
 - [ ] Exercise 6
 
-**CH6: Script**
+### CH6: Script
 
 Example Operations
 - [ ] Exercise 1
@@ -113,7 +113,7 @@ Scripts
 - [ ] Exercise 3
 - [ ] Exercise 4
 
-**CH7: Transaction Creation and Validation**
+### CH7: Transaction Creation and Validation
 
 Validating Transactions
 - [ ] Exercise 1
