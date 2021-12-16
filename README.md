@@ -18,7 +18,7 @@ Title |  Notes
 _In progress:_
 Title |  Notes
 ---------|---------
-[Programming Bitcoin](https://www.amazon.com/Programming-Bitcoin-Learn-Program-Scratch/dp/1492031496) | Progress
+[Programming Bitcoin](https://www.amazon.com/Programming-Bitcoin-Learn-Program-Scratch/dp/1492031496) | [progress](https://github.com/maksimdrachov/my-library/blob/master/programming-bitcoin/README.md)
 [Mastering the Lightning Network](https://github.com/lnbook/lnbook) | Bitcoin, Lightning, Blockchain
 
 _Finished:_

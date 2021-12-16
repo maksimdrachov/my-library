@@ -104,14 +104,14 @@ Transaction Fee
 ### CH6: Script
 
 Example Operations
-- [ ] Exercise 1
+- [x] Exercise 1
 
 p2pk
-- [ ] Exercise 2
+- [x] Exercise 2
 
 Scripts
-- [ ] Exercise 3
-- [ ] Exercise 4
+- [x] Exercise 3
+- [x] Exercise 4
 
 ### CH7: Transaction Creation and Validation
 
