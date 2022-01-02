@@ -116,13 +116,13 @@ Scripts
 ### CH7: Transaction Creation and Validation
 
 Validating Transactions
-- [ ] Exercise 1
-- [ ] Exercise 2
+- [x] Exercise 1
+- [x] Exercise 2
 
 Creating Transactions
-- [ ] Exercise 3
+- [x] Exercise 3
 
 Creating Transaction on testnet
-- [ ] Exercise 4
+- [x] Exercise 4
 - [ ] Exercise 5
 
