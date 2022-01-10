@@ -2,7 +2,7 @@
 
 ## Reading
 
-- [ ] Chapter 1: See a Program Running
+- [x] Chapter 1: See a Program Running
 - [ ] Chapter 2: Data Representation
 - [ ] Chapter 3: ARM Instruction Set Architecture
 - [ ] Chapter 4: Arithmetic and Logic
