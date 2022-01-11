@@ -4,7 +4,7 @@
 
 - [x] Chapter 1: See a Program Running
 - [x] Chapter 2: Data Representation
-- [ ] Chapter 3: ARM Instruction Set Architecture
+- [x] Chapter 3: ARM Instruction Set Architecture
 - [ ] Chapter 4: Arithmetic and Logic
 - [ ] Chapter 5: Load and Store
 - [ ] Chapter 6: Branch and Conditional Execution
