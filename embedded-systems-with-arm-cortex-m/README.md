@@ -31,6 +31,20 @@
 
 ### Chapter 1: See a Program Running
 
+- [x] Ex 1
+- [x] Ex 2
+- [x] Ex 3
+- [x] Ex 4
+- [x] Ex 5
+- [x] Ex 6
+- [x] Ex 7
+- [ ] Ex 8
+- [ ] Ex 9
+- [ ] Ex 10
+- [ ] Ex 11
+- [ ] Ex 12
+- [ ] Ex 13
+
 ### Chapter 2: Data Representation
 
 ### Chapter 3: ARM Instruction Set Architecture
