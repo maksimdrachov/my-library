@@ -9,8 +9,8 @@ Focused on technical literature: embedded, security, blockchain, IoT.
 _Currently on the stack:_
 Title |  Notes
 ---------|---------
-[The Rust Programming Language](https://doc.rust-lang.org/book/title-page.html) | rust basic
-[Rust: The Discovery Book](https://docs.rust-embedded.org/discovery/index.html) | learn rust for embedded
+[Rust: The Discovery Book](https://docs.rust-embedded.org/discovery/index.html) | learn Rust for embedded
+[Embedded Systems with ARM Cortex-M](https://www.amazon.nl/EMBEDDED-SYSTEMS-ARM-CORTEX-Third/dp/0982692668/ref=asc_df_0982692668/?tag=nlshogostdde-21&linkCode=df0&hvadid=454803874950&hvpos=&hvnetw=g&hvrand=17584807861468328226&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001004&hvtargid=pla-431508062154&psc=1) | Cortex-M in-depth study 
 [Programming Bitcoin](https://www.amazon.com/Programming-Bitcoin-Learn-Program-Scratch/dp/1492031496) | learning how bitcoin works under the hood
 [Art of Electronics](https://artofelectronics.net/) | electronics
 [Mastering the Lightning Network](https://github.com/lnbook/lnbook) | Bitcoin, Lightning, Blockchain
@@ -20,7 +20,7 @@ Title |  Notes
 _In progress:_
 Title |  Notes
 ---------|---------
-[Embedded Systems with ARM Cortex-M](https://www.amazon.nl/EMBEDDED-SYSTEMS-ARM-CORTEX-Third/dp/0982692668/ref=asc_df_0982692668/?tag=nlshogostdde-21&linkCode=df0&hvadid=454803874950&hvpos=&hvnetw=g&hvrand=17584807861468328226&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001004&hvtargid=pla-431508062154&psc=1) | Cortex-M in-depth study 
+[The Rust Programming Language](https://doc.rust-lang.org/book/title-page.html) | Rust basic
 
 
 _Finished:_
