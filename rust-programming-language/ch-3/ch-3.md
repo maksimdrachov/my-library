@@ -22,4 +22,54 @@ A tuple is a general way of grouping together a number of values with a variety 
 
 Arrays in Rust have a fixed length.
 
-Continue here: https://doc.rust-lang.org/stable/book/ch03-03-how-functions-work.html
+### Statements and Expressions
+
+Statements are instructions that perform some action and do not return a value. Expressions evaluate to a resulting value.
+
+### Functions with Return Values
+
+The return value of the function is synonymous with the value of the final expression in the block of the body of a function. You can return early from a function by using the `return` keyword and specifying a value, but most functions return the last expression implicitly. 
+
+### Using if in a let Statement
+
+Because if is an expression, we can use it on the right side of a let statement to assign the outcome to a variable.
+
+```rust
+let number = if condition { 5 } else { 6 };
+```
+
+### Repetition with loops
+
+One of the uses of a loop is to retry an operation you know might fail, such as checking whether a thread has completed its job. To do this, you can add the value you want returned after the `break` expression you use to stop the loop.
+
+```rust
+fn main() {
+    let mut counter = 0;
+
+    let result = loop {
+        counter += 1;
+
+        if counter == 10 {
+            break counter * 2;
+        }
+    };
+
+    println!("The result is {}", result);
+}
+```
+
+Range example:
+
+`rev`: reverse the range
+
+```rust
+fn main() {
+    for number in (1..4).rev() {
+        println!("{}!", number);
+    }
+    println!("LIFTOFF!!!");
+}
+```
+
+
+
