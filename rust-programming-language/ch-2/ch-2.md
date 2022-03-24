@@ -1,6 +1,6 @@
 ## Chapter 2: Programming a Guessing Game
 
-THe `::` syntax in the `::new` line indicates that `new` is an associated function of the `String` type. An _associated function_ is a function that's implemented on a type, in this case `String`. 
+The `::` syntax in the `::new` line indicates that `new` is an associated function of the `String` type. An _associated function_ is a function that's implemented on a type, in this case `String`. 
 
 Next, the line `.read_line(&mut guess)` calls the `read_line` method on the standard input handle to get input from the user. We're also passing `&mut guess` as the argument to `read_line` to tell it what string to store the user input in. The string argument needs to be mutable so the method can change the string's content.
 
