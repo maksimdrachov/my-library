@@ -20,6 +20,7 @@ Title |  Notes
 _In progress:_
 Title |  Notes
 ---------|---------
+[Computer Systems Fundamentals](https://w3.cs.jmu.edu/kirkpams/OpenCSF/Books/csf/html/index.html) | Computer Systems
 [The Rust Programming Language](https://doc.rust-lang.org/book/title-page.html) | Rust basic
 
 
