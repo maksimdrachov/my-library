@@ -1,0 +1,75 @@
+- [ ] **Chapter 1: Introduction to Computer Systems**
+  - [x] 1.1 Introduction to Concurrent Systems
+  - [x] 1.2 Systems and Models
+    - [x] 1.2.1 Models as Representations
+    - [x] 1.2.2 From Models to Implementations
+  - [x] 1.3 Themes and Guiding Principles
+    - [x] 1.3.1 Systems as Foundations of Computing
+    - [x] 1.3.2 Systems and Complexity
+    - [x] 1.3.3 The Semiotics of Computer Systems
+  - [x] 1.4 System Architectures
+    - [x] 1.4.1 Client/Server Architectures
+    - [x] 1.4.2 Peer-to-peer (P2P) Architectures
+    - [x] 1.4.3 Layered Architectures
+    - [x] 1.4.4 Pipe-and-filter Architectures
+    - [x] 1.4.5 Event-driven Architectures
+    - [x] 1.4.6 Hybrid Architectures
+  - [x] 1.5 State Models in UML
+    - [x] 1.5.1 State Space Explosion
+    - [x] 1.5.2 Implementing Finite State Machines
+  - [x] 1.6 Sequence Models in UML
+    - [x] 1.6.1 Summary Questions
+  - [ ] 1.7 Extended Example: Text Parser State Machine
+- [ ] **Chapter 2: Processes and OS Basics**
+  - [x] 2.1 Processes and OS Basics
+  - [x] 2.2 Processes and Multiprogramming
+    - [x] 2.2.1 Uniprogramming and Utilization
+    - [x] 2.2.2 Multiprogramming and Concurrency
+    - [x] 2.2.3 Context Switches and Overhead Costs
+  - [x] 2.3 Kernel Mechanics   
+    - [x] 2.3.1 Kernel Memory Structure and Protections
+    - [x] 2.3.2 The Boot Procedure
+    - [x] 2.3.3 Kernel Invocation
+    - [x] 2.3.4 Mode Switches and Privileged Instructions
+  - [x] 2.4 System Call Interface
+    - [x] 2.4.1 System Calls vs Function Calls
+    - [x] 2.4.2 Linux System Calls
+    - [x] 2.4.3 Calling System Calls in Assembly
+    - [x] 2.4.4 Calling System Calls with syscall()
+  - [x] 2.5 Process Life Cycle
+    - [x] 2.5.1 Process Creation
+    - [x] 2.5.2 Switching Program Code
+    - [x] 2.5.3 POSIX Spawn Interface
+    - [x] 2.5.4 Process Destruction
+  - [x] 2.6 The UNIX File Abstraction
+    - [x] 2.6.1 Basic File Access
+    - [x] 2.6.2 Working with Files
+    - [x] 2.6.3 Accessing File Metadata
+  - [x] 2.7 Events and Signals
+    - [x] 2.7.1 Sending Process Signals
+    - [x] 2.7.2 Custom Signal Handlers
+  - [ ] 2.8 Extended Example: Listing Files with Processes
+- [ ] **Chapter 3: Concurrency with IPC**
+  - [x] 3.1 Concurrency with IPC
+  - [x] 3.2 IPC Models
+    - [x] 3.2.1 Advantages and Disadvantages
+    - [x] 3.2.2 An IPC Taxonomy
+  - [x] 3.3 Pipes and FIFOs
+    - [x] 3.3.1 Basic Pipes
+    - [x] 3.3.2 Pipes and Shell Commands
+    - [x] 3.3.3 FIFOs
+  - [x] 3.4 Shared Memory with Memory-mapped Files
+    - [x] 3.4.1 Memory-mapped Files
+    - [x] 3.4.2 Region Protections and Privacy
+  - [x] 3.5 POSIX vs. System V IPC
+    - [x] 3.5.1 POSIX IPC Fundamentals
+  - [x] 3.6 Message Passing with Message Queues
+    - [x] 3.6.1 POSIX Message Queues
+  - [x] 3.7 Shared Memory
+    - [x] 3.7.1 POSIX Shared Memory
+  - [x] 3.8 Semaphores
+    - [x] 3.8.1 POSIX vs System V Semaphores
+    - [x] 3.8.2 POSIX Named Semaphores
+    - [x] 3.8.3 POSIX Unnamed Semaphores
+  - [ ] 3.9 Extended Example: Bash-lite: A Simple Command-line Shell
+
