@@ -139,75 +139,101 @@ For TCP sockets, exchanging messages between the client and server can be done u
 
 UDP sockets require the use of `recvfrom()` and `sendto()` for data exchange. These functions use `struct sockaddr` parameters to determine the sender's IP address when receiving and to specify the destination when sending. 
 
+## 4.5 TCP Socket Programming: HTTP
+
+Processes running at the application layer of the protocol stack are not fundamentally different from non-networked concurrent applications. The process has a virtual memory space, can exchange data through IPC channels, may interact with users through `STDIN` and `STDOUT`, and so on. The primary difference between such distributed application processes and non-networked processes are that the data is exchanged via an IPC channel based on a predefined communication protocol, and that channel has a significantly higher likelihood of intermittent communication failures. 
+
+### 4.5.1 Hypertext Transfer Protocol (HTTP)
+
+The `netcat` tool is a useful way to explore the details of HTTP without a web browser. 
+
+To use `netcat`, you specify the hostname (example.com) and the port number (80) to access. After the command prompt, the first two lines are printed by `netcat` (in verbose mode with the `-v` flag) to indicate it has connected to the server. The next four lines (the `GET`, `Host`, `Connection`, and blank lines) were typed manually by the user to request the contents of `example.com`; there are several other domains that can be accessed from the same IP address. 
+
+### 4.5.2 BNF Protocol Specification
+
+The key features of the HTTP specification in 
 
 
+### 4.5.4 Processing HTTP Headers
 
+Although writing HTTP headers is straightforward, reading them at the other end can be a challenge if not handled properly. The difficulty arises from the fact that header sizes vary, so the receiver does no know how many bytes to request from the socket at a time. To address this challenge, both clients and servers typically impose a a maximum header size of 8 KB by convention. The initial read from the socket requests this much data. If a complete header is not found in this space, then the connection is terminated as invalid by clients; servers that receive such invalid headers return Status 413 to indicate `Entity Too Large`. A complete header must end with a blank line, creating the four-byte sequence "\r\n\r\n". 
 
+Once the header and body have been split, processing the header involves repeatedly breaking it at the `CRLF` locations. 
 
+### 4.5.5 Persistent State with Cookies
 
+## 4.6 UDP Socket Programming: DNS
 
+### 4.6.1 Resolving DNS Queries
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## 4.4 The Socket Interface
-
-### 4.4.1 Networking Data Structures
-
-Once the socket is created, the client and server processes use different functions to establish the network link between their sockets. These functions rely on a common `struct sockaddr` data structure. The basic form of this structure contains two fields:
+### 4.6.4 Constructing DNS Queries with Sockets
 
 ```cpp
-/* defined in sys/socket.h */
-struct sockaddr {  /* generic socket address structure */
-  sa_family_t sa_family;
-  char sa_data[14];
-};
+typedef struct {
+  uint16_t xid;     /* Randomly chosen identifier */
+  uint16_t flags;   /* Bit-mask to indicate request/response */
+  uint16_t qdcount; /* Number of questions */
+  uint16_t ancount; /* Number of answers */
+  uint16_t nscount; /* Number of authority records */
+  uint16_t arcount; /* Number of additional records */
+} dns_header_t;
+
+typedef struct {
+  char *name;       /* Pointer to the domain name in memory */
+  uint16_t dnstype; /* The QTYPE (1 = A) */
+  uint16_t dnsclass;/* The QCLASS (1 = IN) */
+}dns_question_t
 ```
 
-The `sockaddr` and `sockaddr_in` structures are identical in size, allowing for straightforward casting between the two. Both begin with a `sa_family_t` field to indicate the domain. The `sockaddr_in` breaks the rest of the bytes into three fields. The `sin_port` is a 16-bit field to designate the port number for the socket and the `sin_addr` contains the 32-bit IPv4 address.
+Illustrates how to start creating a DNS query using the OpenDNS service. This same request could be sent to any DNS server, such as the DNS server operated by the reader's ISP. 
 
-The internal representations of `in_addr` and `in6_addr` are different from the standard notation used for IP addresses. For instance, readers may be familiar with the `dotted decimal` notation of IPv4 addresses, as illustrated by the loopback address 127.0.0.1 that refers to the local host machine. This format is used for human readability, but the actual IP address is stored as a 32-bit valuem with each byte corresponding to one the dotted fields.
+Open a socket (SOCK_DGRAM) to create a UDP socket. 
 
-### 4.4.2 Client Socket Interface
+OpenDNS's DNS server IPv4 address is available at 208.67.222.222, which is the hexadecimal value 0xd043dede. 
 
-IP addresses should not be hard-coded, as they can change. 
+DNS servers listen on port 53, so that value is also set. 
 
-Instead, `getaddrinfo()` provides an interface to look up an IP address by the standard text format used in URIs. This string is passed as the first argument, `nodename`.
+For the DNS header, we can randomly assign any value to the XID field, which has no inherent meaning to the server itself. 
 
-The `servname` parameter indicates a desired service, such as `"http"`. 
+### 4.6.5 Processing DNS Query Responses
 
-The `hints` parameter can be used to limit the list of results, such as restricting the domain to `AF_INET` (IPv4) or `AF_INET6` (IPv6), or limiting the type to `SOCK_STREAM` or `SOCK_DGRAM`.
+To receive the response from the DNS server, start by allocating the contents of a 512-byte buffer in memory. The length of this buffer can be hard-coded in this way, as the DSN specification mandates a maximum of 512 bytes for all messages. The actual length of the received data is set when `recvfrom()` retrieves the response from the socket.
 
-The final parameter, `res`, is a call-by-reference parameter that will be set to point to a linked list of address structures.
+The use of `__attribute__((packed))` in this `struct` declaration is critical to tell the compiler not to re-order the fields of the `struct` within the program. When reading data from the network, the bytes will occur in a particular order. When we use a `struct` to impose a logical meaning on those bytes in a program, we would expect the interpretation to be like this:
 
-### Server Socket Interface
+However, compilers routinely re-order the fields in a `struct` to preserver word alignment, trying to group the bytes into chunks of 32 bits as much as possible. In this case, many compilers would swap the `ttl` and `length` fields, which would impose the wrong structure on the sequence of bytes received from the network:
+
+## 4.7 Application-Layer Broadcasting: DHCP
+
+DNS provides a mechanism that clients can use to determine the IP address for a server based on a human-readable domain name. In addition, server processes for common protocols listen for incoming requests on well-known ports. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

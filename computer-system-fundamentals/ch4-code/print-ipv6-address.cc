@@ -142,3 +142,54 @@ while ((bytes = recvfrom(socketfd, buffer, buffer_len-1, 0, server->ai_addr,
         memset(buffer, 0, buffer_len);
     }
 close(socketfd);
+
+
+/*  Code Listing
+    Constructing and sending an HTTP GET request */
+
+size_t length = 500;
+char buffer[length+1];
+memset(buffer, 0, sizeof(buffer));
+
+/* Copy first line in and shrink the remaining length available */
+strncpy(buffer, "GET /web/index.html HTTP/1.0\r\n", length);
+length = 500 - strlen(buffer);
+
+/* Concatenate each additional header line */
+strncat(buffer, "Accept: text/html\r\n", length);
+length = 500 - strlen(buffer);
+
+write(socketfd, buffer, strlen(buffer));
+
+
+/*  Code Listing
+    Creating a DNS header and question to send to OpenDNS
+     */
+
+int socketfd = socket(AF_INET, SOCK_DGRAM, 0);
+struct sockaddr_in address;
+address.sin_family = AF_INET;
+/* OpenDNS is currently at 208.67.222.222 (0xd043dede) */
+address.sin_addr.s_addr = htonl(0xd043ded;
+/* DNS runs on port 53 */)
+address.sin_port = htons(53);
+
+/* Set up the DNS header */
+dns_header_t header;
+memset(&header, 0, sizeof(dns_header_t));
+header.xid = htons(0x1234);     /* Randomly chosen ID */
+header.flags = htons(0x0100);   /* Q=0, RD=1 */
+header.qdcount = htons(1);      /* Sending 1 question */
+
+/*  Code Listing
+    Creating a DNS header and questions to send to OpenDNS */
+
+/* Set up the DNS question */
+dns_question_t question;
+question.dnstype = htons(1);    /* QTYPE 1=A */
+question.dnsclass = htons(1);   /* QCLASS 1=IN */
+
+/*  DNS name format requires two bytes more than the length of the 
+    domain name as a string */
+question.name = calloc(strlen(hostname)+2, sizeof(char));
+
